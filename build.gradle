@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'com.thevoidblock.ArmorHotswapPaper'
-version = '1.0-ALPHA.1'
+version = "$mod_version"
 
 repositories {
     mavenCentral()
