@@ -1,0 +1,8 @@
+name: ArmorHotswapPaper
+version: 1.0.0
+main: com.thevoidblock.ArmorHotswapPaper.ArmorHotswapPaper
+description: A 1.16.5 armor hotswap plugin for Paper.
+author: TheVoidBlock
+website: https://modrinth.com/plugin/armor-hotswap
+api-version: '1.16'
+load: STARTUP

@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.thevoidblock.ArmorHotswapPaper'
+version = '1.0-ALPHA.1'
+
+repositories {
+    mavenCentral()
+
+    maven {
+        url 'https://repo.papermc.io/repository/maven-public/'
+    }
+
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    compileOnly("com.destroystokyo.paper:paper-api:${paper_version}")
+}
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(16))
+}
+
+test {
+    useJUnitPlatform()
+}
